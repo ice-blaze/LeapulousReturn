@@ -25,7 +25,7 @@ public class GameManager : MonoBehaviour {
 	}
 
 	public void BasketPoint(Collider collider){
-		if(collider.rigidbody.velocity<0){
+		if(collider.rigidbody.velocity.y<0.0f){
 			basketPoint++;
 			HudDisplay("Bravo !\nYou score a point\nTotal : "+ basketPoint.ToString() +" !");
 		}
