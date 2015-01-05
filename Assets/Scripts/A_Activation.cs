@@ -6,7 +6,7 @@ public abstract class A_Activation : MonoBehaviour
 	protected GameManager gameManager;
 
 	void Start(){
-//		gameManager = GameObject.Find("UIManager").GetComponent<GameManager>();
+		gameManager = GameObject.Find("UIManager").GetComponent<GameManager>();
 	}
 	
 	void OnTriggerEnter(Collider collision){
